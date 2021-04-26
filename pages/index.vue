@@ -20,6 +20,8 @@ export default {
     qrcode: null,
   }),
   mounted() {
+    console.log(process.env.URL_WEBSOCKET);
+
     const socket = io(process.env.URL_WEBSOCKET);
 
     socket.on('configs', (msg) => {
