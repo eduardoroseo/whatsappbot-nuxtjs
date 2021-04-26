@@ -48,6 +48,6 @@ export default {
   },
 
   env: {
-    baseUrl: process.env.URL_WEBSOCKET || 'localhost:3000'
+    URL_WEBSOCKET: process.env.URL_WEBSOCKET || 'localhost:3000'
   }
 }
